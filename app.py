@@ -208,7 +208,7 @@ class CoordinatePlotter:
         self.app.mainloop()
 
 if __name__ == "__main__":
-    with open('song_clusters.pkl', 'rb') as f:
+    with open('./files/song_clusters.pkl', 'rb') as f:
         df = pickle.load(f)
     plotter = CoordinatePlotter(df)
     plotter.run()

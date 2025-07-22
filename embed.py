@@ -14,5 +14,5 @@ for basename in tqdm(os.listdir(folder_path)[300:], desc="Getting Embeddings"):
     embedding_vector = embeddings.mean(axis=0)
     embeddings_dict[basename] = embedding_vector
 
-with open("embedings.pkl", "wb") as f:
+with open("./files/embedings.pkl", "wb") as f:
     pickle.dump(embeddings_dict, f)

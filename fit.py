@@ -4,7 +4,7 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import silhouette_score, davies_bouldin_score
 
-with open("embeddings.pkl", "rb") as f:
+with open("./files/embeddings.pkl", "rb") as f:
     df = pickle.load(f)
 
 X = df.iloc[:, 1:].values
